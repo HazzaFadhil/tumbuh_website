@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TikTok Sans", Arial, sans-serif;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.logo {
+  max-width: 10cap;
+  margin-left: 340px;
+  margin-top: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin-right: 340px;
+  margin-top: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000000;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: linear-gradient(to bottom, #fff 0%, #ffffff 100%);
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.hero-image {
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 20px 30px;
+  background: transparent;
+  border: 2px solid #333;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+.cta-button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  letter-spacing: -3px;
+}
+
+.section-title-2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.section-title-2::before {
+  content: "∴";
+  margin-right: 8px;
+  color: #333;
+}
+
+.section-title::before {
+  content: "∴";
+  margin-right: 8px;
+  color: #333;
+}
+
+/* Zero Hunger Section */
+.zero-hunger {
+  background: #fff;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.text-content h3 {
+  font-size: 20px;
+  margin-top: -22px;
+  margin-bottom: 235px;
+  color: #666;
+}
+
+.text-content p {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.highlight {
+  color: #000000;
+  font-weight: 600;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+/* Food Waste Section */
+.food-waste {
+  background: #ffffff;
+}
+
+.bullet-list {
+  margin-top: -14px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.bullet-list li {
+  padding-left: 20px;
+  position: relative;
+  color: #333;
+  font-size: 20px;
+}
+
+.bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+
+/* .text-content p {
+  margin-top: 32px;
+} */
+
+/* Why Important Section */
+.why-important {
+  background: #fff;
+  text-align: center;
+  margin-top: 158px;
+  margin-bottom: 86px;
+}
+
+.why-important .text-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 20px 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-logo-icon {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.copyright {
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}

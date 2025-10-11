@@ -203,6 +203,10 @@ nav {
   margin: 0 auto;
 }
 
+.group-photo {
+  filter: grayscale();
+}
+
 /* Footer */
 footer {
   background: #000;

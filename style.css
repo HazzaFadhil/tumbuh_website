@@ -264,29 +264,3 @@ footer {
   font-size: 16px;
   font-weight: lighter;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .content-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .nav-links {
-    gap: 20px;
-  }
-
-  .section-title {
-    font-size: 24px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-}

@@ -288,31 +288,32 @@ footer {
 }
 
 /* responsive ponsel */
-@media (max-width: 478px) {
+@media (max-width: 480px) {
   nav {
-    flex-direction: column;
+    flex-direction: row; /* Tetap sejajar (tidak ke bawah) */
+    justify-content: space-between; /* Logo di kiri, toggle di kanan */
     align-items: center;
+    padding: 10px 20px;
   }
 
   .nav-links {
+    position: absolute;
+    top: 60px; /* di bawah navbar */
+    right: 20px;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
   }
 
-  .hero h1 {
-    font-size: 24px;
+  .nav-links.active {
+    display: flex;
   }
 
-  .section-title {
-    font-size: 20px;
+  .menu-toggle {
+    display: block;
   }
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {

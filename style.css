@@ -288,7 +288,7 @@ footer {
 }
 
 /* responsive ponsel */
-@media (max-width: 480px) {
+@media (max-width: 478px) {
   nav {
     flex-direction: row; /* Tetap sejajar (tidak ke bawah) */
     justify-content: space-between; /* Logo di kiri, toggle di kanan */

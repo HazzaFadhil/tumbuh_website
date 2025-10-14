@@ -311,7 +311,7 @@ footer {
 
 .menu-toggle {
   display: none;
-  font-size: 32px;
+  font-size: 28px !important;
   cursor: pointer;
 }
 

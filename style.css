@@ -290,7 +290,7 @@ footer {
 /* responsive ponsel */
 @media (max-width: 478px) {
   nav {
-    flex-direction: row; /* Tetap sejajar (tidak ke bawah) */
+    /* flex-direction: row; */
     justify-content: space-between; /* Logo di kiri, toggle di kanan */
     align-items: center;
     padding: 10px 20px;

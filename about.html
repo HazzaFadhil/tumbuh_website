@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dibalik 'Tumbuh'</title>
+    <title>Dibalik 'Tumbuh' | Tumbuh</title>
     <link
       href="https://fonts.googleapis.com/css2?family=TikTok+Sans&display=swap"
       rel="stylesheet"
@@ -11,17 +11,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- Badan dari Tentang Kami -->
   <body>
+    <!-- Navigasi -->
     <nav>
       <img src="img/tumbuh.png" class="logo" />
-      <ul class="nav-links">
-        <li><a href="index.html">Misi</a></li>
-        <li><a href="index.html">Solusi</a></li>
-        <strong><li><a href="about.html" class="active">Tentang</a></li>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#misi">Misi</a></li>
+        <li><a href="index.html#solusi">Solusi</a></li>
+        <li><a href="about.html" class="active">Tentang</a></li>
       </ul>
     </nav>
 
+    <!-- Section Tentang -->
     <section class="section about-page">
       <div class="container">
         <h2 class="section-title">Dibalik 'Tumbuh'</h2>
@@ -31,6 +33,7 @@
       </div>
     </section>
 
+    <!-- Section Misi -->
     <section class="section mission-section">
       <div class="container">
         <div class="content-grid">
@@ -56,22 +59,33 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <a href="tumbuh.html"
+            <a href="index.html"
               ><img src="img/horizontal-logo.png" style="max-width: 12cap"
             /></a>
           </div>
           <div class="footer-links">
-            <a href="index.html">Misi</a>
-            <a href="index.html">Solusi</a>
+            <a href="index.html#misi">Misi</a>
+            <a href="index.html#solusi">Solusi</a>
             <a href="about.html" class="active">Tentang</a>
           </div>
           <div class="copyright">Copyright 2025© Tumbuh</div>
         </div>
       </div>
     </footer>
+
+    <!-- Script toggle -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

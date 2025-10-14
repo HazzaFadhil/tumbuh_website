@@ -21,22 +21,22 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px;
   background: #fff;
+  z-index: 1000;
+  position: relative;
 }
 
 .logo {
   max-width: 10cap;
-  margin-left: 340px;
-  margin-top: 24px;
+  margin: 0;
 }
 
 .nav-links {
   display: flex;
   gap: 32px;
   list-style: none;
-  margin-right: 340px;
-  margin-top: 24px;
+  margin: 0;
 }
 
 .nav-links a {
@@ -203,10 +203,6 @@ nav {
   margin: 0 auto;
 }
 
-.group-photo {
-  filter: grayscale();
-}
-
 /* Footer */
 footer {
   background: #000;
@@ -263,4 +259,119 @@ footer {
   color: #ffffff;
   font-size: 16px;
   font-weight: lighter;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* responsive ponsel */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* ==== KHUSUS HALAMAN TENTANG ==== */
+.about-page {
+  padding: 6rem 2rem;
+  background-color: #fff;
+}
+
+.about-page .section-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-page .image-content img {
+  width: 100%;
+  max-width: 600px;
+  /* border-radius: 20px; */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive: biar tetap rapi di layar HP */
+@media (max-width: 768px) {
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 2rem;
+  }
+
+  .image-content img {
+    max-width: 90%;
+  }
 }
